@@ -6,6 +6,19 @@ http://www.templatemo.com/tm-508-power
 
 */
 
+.faded-hr {
+    display:block;
+    border:none;
+    color:white;
+    height:1px;
+    background:black;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(#000), to(#363e50));
+}
+
+#about .col-md-4 {
+  height: 450px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -72,7 +85,7 @@ p {
 .primary-button a {
   padding: 13px 20px;
   letter-spacing: 0.5px;
-  background-color: #46bae2;
+  background-color: #363e50;
   color: #fff;
   text-transform: uppercase;
   font-size: 13px;
@@ -83,7 +96,7 @@ p {
 .secondary-button a {
   padding: 13px 20px;
   letter-spacing: 0.5px;
-  background-color: #f2745f;
+  background-color: #ff6600;
   color: #fff;
   text-transform: uppercase;
   font-size: 13px;
@@ -106,8 +119,15 @@ p {
 
 .section-heading {
   text-align: center;
-  margin-top: 80px;
+  margin-top: 40px;
   margin-bottom: 60px;
+}
+
+.section-heading h2 {
+  margin-top: 0px;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .section-heading h4 {
@@ -115,21 +135,27 @@ p {
   font-size: 28px;
   text-transform: uppercase;
   font-weight: 300;
-  color: #121212;
+}
+
+.section-heading h6 {
+  margin-top: 0px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 300;
 }
 
 .section-heading p {
   color: #7a7a7a;
-  padding: 0px 25%;
+  padding: 0px 50px;
 }
 
 .navbar-inverse {
-  background-color: #fff;
+  background-color: white;
   border: none;
 }
 
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
-  background-color: #f2745f;
+  background-color: #363e50;
 }
 
 .main-header {
@@ -162,7 +188,7 @@ p {
 }
 
 #menu-wrapper {
-  background-color: white;
+  background-color: red;
   overflow: hidden;
   -moz-box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.07);
   -webkit-box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.07);
@@ -175,7 +201,7 @@ p {
   line-height: 50px;
   font-weight: 900;
   text-transform: uppercase;
-  color: #46bae2!important;
+  color: #363e50!important;
   transition: all 0.5s;
   margin-left: 30px;
 }
@@ -189,7 +215,7 @@ p {
 }
 .menu-first {
   float: right;
-  margin-left: 
+  margin-left:
 }
 .menu-first li a {
   color: #7a7a7a;
@@ -206,7 +232,7 @@ p {
 }
 .menu-first ul li.active a {
   color: #fff;
-  background-color: #f2745f;
+  background-color: #ff6600;
 }
 
 .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
@@ -214,8 +240,8 @@ p {
 }
 
 .navbar-inverse .navbar-toggle {
-  border-color: #f2745f;
-  background-color: #f2745f;
+  border-color: #ff6600;
+  background-color: #ff6600;
   right: 15px;
 }
 
@@ -228,7 +254,7 @@ p {
 
 .banner-content {
   text-align: center;
-  padding: 280px 0px 200px 0px;
+  padding: 250px 0px 150px 0px;
 }
 
 .banner-content h6 {
@@ -261,9 +287,8 @@ p {
   margin: 10px;
 }
 
-
 .intro {
-  background-color: #46bae2;
+  background-color: #363e50;
   text-align: center;
   padding: 80px 0px;
 }
@@ -302,6 +327,7 @@ p {
   text-align: center;
   margin: 0px -15px;
   padding: 120px 45px;
+  height: 100%;
 }
 
 #about .service-item h4 {
@@ -319,7 +345,9 @@ p {
 }
 
 #about .first-service {
-  background-color: rgba(242, 116, 95, 0.75);
+  background-color: rgba(255, 102, 0, 0.75);
+  background-color: rgba(70, 186, 226, 0.75);
+
 }
 
 #about .second-service {
@@ -328,6 +356,7 @@ p {
 
 #about .third-service {
   background-color: rgba(70, 186, 226, 0.75);
+
 }
 
 #about .service-item .icon {
@@ -353,7 +382,7 @@ p {
 }
 
 .what-we-do .tabs .active .list-item {
-  background-color: #f2745f!important;
+  background-color: #ff6600!important;
   color: #fff!important;
 }
 
@@ -427,11 +456,14 @@ p {
 
 .portfolio-section {
   background-color: #363e50;
-  padding-bottom: 80px;
 }
 
-#portfolio .section-heading h4 {
+#portfolio .section-heading h6, h4, h2 {
   color: #fff;
+}
+
+#portfolio .section-heading h6 {
+  text-decoration: underline;
 }
 
 #portfolio .section-heading p {
@@ -666,7 +698,7 @@ footer p {
   text-transform: uppercase;
   color: #fff;
   margin-bottom: 0px;
-  padding: 75px 0px;
+  padding: 50px 0px;
 }
 
 footer a {
@@ -679,7 +711,7 @@ footer a:hover {
 
 footer .social-icons {
   text-align: center;
-  padding: 77px 0px;
+  padding: 50px 0px;
   margin: 0px;
 }
 
@@ -707,7 +739,7 @@ footer .back-to-top a {
   background-color: #46bae2;
   display: inline-block;
   width: 100%;
-  padding: 60px 0px;
+  padding: 30px 0px;
   color: #fff;
   font-size: 15px;
   text-transform: uppercase;
@@ -745,10 +777,23 @@ footer .back-to-top i {
 
 @media (max-width: 767px){
 
+  .faded-hr {
+      background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 300, from(#000), to(#363e50));
+  }
+  #bannerTitle {
+    font-size: 50px;
+  }
+
+  #about .col-md-4 {
+    height: 250px;
+  }
+  .service-item {
+    padding: 20px 40px !important;
+  }
   .navbar-brand {
     float: none;
   }
-  
+
   .menu-first {
     margin: 0px;
     padding: 0px;
@@ -779,15 +824,17 @@ footer .back-to-top i {
   }
 
   .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-    background-color: #f2745f;
+    background-color: #ff6600;
   }
-  
+
 
 }
 
 @media (max-width: 385px){
+  .faded-hr {
+      background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 150, from(#000), to(#363e50));
+  }
 
-  
 
 }
 
@@ -975,4 +1022,9 @@ footer .back-to-top i {
 @include keyframes(slbEnter) {
     from { opacity: 0; @include transform(translate3d(0, -1em, 0)); }
     to { opacity: 1; @include transform(translate3d(0, 0, 0)); }
+}
+
+
+.menu-first a {
+  color: #363e50;
 }
