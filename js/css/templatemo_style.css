@@ -6,14 +6,7 @@ http://www.templatemo.com/tm-508-power
 
 */
 
-.faded-hr {
-    display:block;
-    border:none;
-    color:white;
-    height:1px;
-    background:black;
-    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(#000), to(#363e50));
-}
+
 
 #about .col-md-4 {
   height: 450px;
@@ -27,7 +20,6 @@ http://www.templatemo.com/tm-508-power
 }
 
 a {
-  text-decoration: none!important;
 }
 
 body {
@@ -254,11 +246,11 @@ p {
 
 .banner-content {
   text-align: center;
-  padding: 250px 0px 150px 0px;
+  padding: 150px 0px 0px 0px;
 }
 
 .banner-content h6 {
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
   font-weight: 700;
   text-transform: uppercase;
@@ -267,8 +259,8 @@ p {
 }
 
 .banner-content h2 {
-  font-size: 80px;
-  font-weight: 700;
+  font-size: 60px;
+  font-weight: 400;
   text-transform: uppercase;
   color: #fff;
   letter-spacing: 2px;
@@ -345,18 +337,15 @@ p {
 }
 
 #about .first-service {
-  background-color: rgba(255, 102, 0, 0.75);
-  background-color: rgba(70, 186, 226, 0.75);
-
-}
-
-#about .second-service {
   background-color: rgba(54, 62, 80, 0.75);
 }
 
-#about .third-service {
+#about .second-service {
   background-color: rgba(70, 186, 226, 0.75);
+}
 
+#about .third-service {
+  background-color: rgba(54, 62, 80, 0.75);
 }
 
 #about .service-item .icon {
@@ -456,10 +445,6 @@ p {
 
 .portfolio-section {
   background-color: #363e50;
-}
-
-#portfolio .section-heading h6, h4, h2 {
-  color: #fff;
 }
 
 #portfolio .section-heading h6 {
@@ -629,6 +614,7 @@ p {
   background-color: #fff;
   text-align: left;
   padding-bottom: 100px;
+  margin-left: 15px;
 }
 
 #contact-us .section-heading {
@@ -785,7 +771,7 @@ footer .back-to-top i {
   }
 
   #about .col-md-4 {
-    height: 250px;
+    height: 300px;
   }
   .service-item {
     padding: 20px 40px !important;
@@ -827,6 +813,12 @@ footer .back-to-top i {
     background-color: #ff6600;
   }
 
+  .section-heading p {
+    padding: 0px 5px;
+  }
+  .section-heading {
+    text-align: left;
+  }
 
 }
 

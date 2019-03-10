@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css?family=Allerta+Stencil|Josefin+Sans|Raleway:300|Cuprum:400, 400i');
+
+:root {
+    --dark-blue: #02386b;
+    --light-blue: #0084ff;
+    --blue: #0160b9;
+    --fiverr-green: #32CD32;
+}
+
+body {
+    background: var(--light-blue);
+}
+.dr-header {
+    width: 100%;
+    padding: 30px 50px;
+    margin: 0;
+}
+
+.dr-header h1 {
+    font-family: 'Allerta Stencil', sans-serif;
+    color: white;
+    margin: 0px;
+    font-weight: 500;
+}
+
+.dr-header h4 {
+    margin: 0px 0px 0px 2px;
+    font-weight: 100;    
+    font-family: 'Josefin Sans', cursive;
+}
+
+.dr-title {
+    width: 100%;
+    padding: 50px 200px 50px 200px;
+    text-align: center;
+    margin: 0;
+}
+
+.dr-title h1 {
+    font-family: 'Cuprum', sans-serif;
+    font-size: 5rem;
+    color: white;
+}
+
+.about-item {
+    
+    background-color: white;
+    padding: .5em 2em;
+    color: white;
+    box-sizing: border-box;
+    height: 100%;
+    text-align: center;
+    /*border: 2px solid black;*/
+}
+
+.about {
+    width: 1200px;
+    margin-bottom: -3px;
+}
+
+.about-content-row {
+    height: 450px;
+}
+
+.about-header-row .col-md-12 {
+    padding: 1px;
+}
+
+.about-content-row > .col-md-4 {    
+    height: 100%;
+    
+}
+
+.about-content-row > .col-md-4:nth-child(1) {padding: 0px 1px 1px 0px;}
+
+.about-content-row > .col-md-4:nth-child(2) {padding: 0px 1px 1px 1px;}
+
+.about-content-row > .col-md-4:nth-child(3) {padding: 0px 0px 1px 1px;}
+
+.about-content-row > .col-md-4:nth-child(1) .about-item {border-radius: 50px 0px 0px 0px;}
+
+.about-content-row > .col-md-4:nth-child(3) .about-item {border-radius: 0px 50px 0px 0px;}
+
+
+
+.about-content-row > .col-md-4:nth-child(2) h4 {    
+    margin: 8px 0px;
+    
+}
+
+/* .about-header-row .col-md-4:nth-child(1) {
+    padding: 0px 0px 1px 1px;
+}
+.about-header-row .col-md-4:nth-child(2) {
+    padding: 0px 0px 1px 0px;
+}
+.about-header-row .col-md-4:nth-child(3) {
+    padding: 0px 1px 1px 0px;
+} */
+
+.about-header-row .about-item {   
+    border-radius: 50px 50px 0px 0px;
+    padding: 1rem 4rem;
+    background-color: var(--blue) !important;
+    color: white !important;
+}
+
+.about h1 {
+    font-family: 'Cuprum', sans-serif;
+    white-space: nowrap;
+    /* font-size: 2vw; */
+    color: var(--blue);
+}
+
+
+.about h2, h3 {    
+    font-family: 'Cuprum', sans-serif;
+    color: var(--light-blue);
+}
+
+.about-item > h2 {    
+    margin-top: 20px;
+    color: rgb(85, 85, 85);
+    /* font-size: 1.5vw; */
+}
+
+.about hr {   
+    margin: auto !important;
+}
+
+.about h4, h5 {    
+    color: var(--light-blue);
+    font-family: 'Raleway', sans-serif;
+}
+
+.about-item i {    
+    padding: 10px;
+}
+  
+.bio-section .item {
+    margin: 0px 5px;
+  }
+  
+  .bio-section .container {
+      margin: auto;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0px 0px 12px #000000;
+    position: relative;
+    z-index: 5;
+    border-radius: 50px;
+    width: 1400px;
+  }
+  
+  .bio-section .section-heading h6 {
+    text-decoration: underline;
+  }
+  
+  .bio-section .section-heading p {
+    color: #aaa;
+  }
+
+  .bio-section h1 {
+    font-family: 'Cuprum', sans-serif;
+    margin-top: 25px;
+    color: var(--blue);
+    font-size: 50px;
+  }
+
+  .bio-section h2 {
+    font-family: 'Cuprum', sans-serif;
+    margin-top: 0px;
+  }
+
+  .bio-section p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+  }
+
+  .bio-section .col-md-12:nth-child(2) {
+    margin-bottom: 50px;
+  }
+
+  .portfolio-section {
+      background-color: white;
+      padding: 175px 100px 40px 100px;
+      margin-top: -150px;
+      box-shadow: 0px 0px 12px #000000;
+  }
+
+  .portfolio-section h1 {
+    font-family: 'Cuprum', sans-serif;
+    font-size: 50px;
+    color: var(--blue);
+}
+
+.portfolio-section h2 {
+    font-family: 'Cuprum', sans-serif;
+}
+
+.portfolio-description {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+
+  .project {
+    background-color: var(--light-blue);
+    border-radius: 50px;
+    padding: 5px 40px;
+    color: white;
+    margin: 5px;
+  }
+
+  .project-description {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+  }
+
+  .portfolio-section .container {
+    width: auto;
+    margin: 0px;
+
+  }
+  .project-tags {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+  
+
+  .project-tags h4 {
+    border-radius: 25px;
+    background-color: white;      
+    max-width: 300px;
+    min-width: 50px;
+    padding: 5px 10px;
+    height: 30px;
+    margin: 5px 10px 5px 0px;
+    white-space: nowrap;
+    font-size: 16px;
+    line-height: 18px;
+    font-family: 'Cuprum', sans-serif;
+    color: var(--light-blue);
+}
+
+
+.project-links {
+    margin-top: 10px;
+    font-size: 30px;
+    color: black;
+}
+
+.project-links a {
+    color: black;
+}
+
+.project img {
+  /* width: 288px;
+  height: 162px; */
+  width: 100%;
+  object-fit: contain;
+}
+
+.contact-me {
+  background-color: clear;
+  padding: 50px;
+}
+
+.contact-me h1 {
+  font-family: 'Cuprum', sans-serif;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+.contact-me a {
+  text-decoration: none;
+}
+
+.contact-links {
+  text-align: center;
+}
+
+.contact-links i {
+  color: white;
+  font-size: 80px;  
+  margin: 50px;
+}
+.tags-header {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.faded-hr {
+    display:block;
+    height:2px;
+    background:black;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(255, 255, 255)), to(rgba(0,0,0,0)));
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.fiverr-link {
+    color: var(--fiverr-green);
+}
+
+footer {
+  box-shadow: 0px 0px 12px #000000;
+  background-color: #ffffff;
+  color: black;
+  padding: 20px 0px;
+}
+
+footer h2 {
+  font-family: 'Cuprum', sans-serif;
+    font-size: 30px;
+    color: black;
+}
+footer h3 {
+  text-align: right;
+  font-family: 'Cuprum', sans-serif;
+    font-size: 20px;
+    color: black;
+}
+/**
+ * Basic CSS Media Query Template
+ * Author: Michael Vieth
+ * ------------------------------------------
+ *  Responsive Grid Media Queries - 1280, 1024, 768, 480
+ *   1280-1024   - desktop (default grid)
+ *   1024-768    - tablet landscape
+ *   768-480     - tablet 
+ *   480-less    - phone landscape & smaller
+ * --------------------------------------------
+ */
+ @media all and (min-width: 992px) and (max-width: 1500px) {
+    .bio-section .container {
+      box-shadow: none;
+      border-radius: 0px 0px 50px 50px;
+      width: 1200px;
+      margin: 1px auto 200px auto;
+      padding: 0px 30px;
+    }
+}
+
+ @media all and (min-width: 1280px) and (max-width: 1500px) {
+    .about {margin-bottom: 1px;}
+}
+ @media all and (min-width: 1024px) and (max-width: 1280px) {
+    .bio-section {padding: 0px 75px;}
+    .dr-title {padding: 50px 50px;}
+    .about h1 {font-size: 3vw;}    
+  }
+
+ @media all and (min-width: 992px) and (max-width: 1024px) {
+    .about {padding: 0px 50px;}
+    .about h1 {font-size: 3vw;}
+    .bio-section {padding: 0px 75px;}
+  }
+  @media all and (min-width: 768px) and (max-width: 991px) {
+    .about {padding: 0px 200px;}
+    .about h1 {font-size: 4vw;}
+    .about h2 {font-size: 3vw;}
+    .bio-section {padding: 0px 75px;}
+  }
+ 
+ @media all and (min-width: 480px) and (max-width: 768px) {
+    .about {padding: 0px 25px 25px 25px !important;}
+    .bio-section {padding: 0px 25px 25px 25px;}
+  }
+ 
+ @media all and (max-width: 480px) {
+    .about {padding: 0px 25px 25px 25px !important;}
+    .bio-section {padding: 0px 25px 25px 25px;}
+    .portfolio-section {padding: 25px 0px !important;}
+  }
+
+  @media all and (max-width: 1280px) {
+    .about {padding: 0px 75px; width: auto;}
+    .bio-section .container {
+        width: auto;
+        box-shadow: none;
+        border-radius: 0px 0px 50px 50px;
+        margin: 4px -15px 200px -15px;
+        padding: 0px 30px;
+      }
+      
+    
+  }
+  @media all and (max-width: 1024px) {
+    .dr-title {padding: 25px 25px;}
+    .dr-header {padding: 25px 25px 0px 25px; text-align: center;}
+    .faded-hr {display: none;}
+    
+    .project-row > .col-md-6 {width: 100% !important;}
+  }
+
+  @media all and (max-width: 991px) {
+    .about-content-row {height: auto;}
+    
+    .about-content-row > .col-md-4:nth-child(1) .about-item {    
+        border-radius: 50px 50px 0px 0px;
+    }
+    
+    .about-content-row > .col-md-4:nth-child(3) .about-item {    
+        border-radius: 0px 0px 50px 50px;
+    }
+    .bio-section .container {
+        border-radius: 50px 50px 50px 50px;
+        margin-top: 20px;
+      }
+      .project img {width: 75%;}
+      .portfolio-section {padding: 25px 25px 25px 25px;}
+   }
+
+   @media all and (max-width: 768px) {
+    .faded-hr {display: none;}
+    .about h1 {font-size: 6vw;}
+    .about h2 {font-size: 5vw;}
+    .dr-title h1 {margin: 0px; }
+    .project img {width: 100% !important;}
+  }
