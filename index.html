@@ -1,26 +1,22 @@
 <?php
-
-if (isset($_POST['name'])) {
-    error_reporting(E_ALL);
-ini_set('display_errors', 1);
-  $name = strip_tags($_POST['name']);
-  $email = strip_tags($_POST['email']);
-  $subject = strip_tags($_POST['subject']);
-
-  $message = $name."<br><br>".$email."<br><br>".$message;
-
-  $message = wordwrap(strip_tags($_POST['message']), 75, "\n");
-
-  
-  $headers = "MIME-Version: 1.0" . "\r\n";
-  $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-  $headers .= 'From: Contact Forms <contact@devreo.info>' . "\r\n";
-  $to = "ryan@devreo.info";
-  //$to = "ryanorourke@yahoo.com";
-  mail($to,$subject,$message,$headers);
-  //header("Location: index.php");
-  //die();
-}
+// /// For contact form
+// if (isset($_POST['name'])) {
+//     error_reporting(E_ALL);
+//     ini_set('display_errors', 1);
+//     $name = strip_tags($_POST['name']);
+//     $email = strip_tags($_POST['email']);
+//     $subject = strip_tags($_POST['subject']);
+//     $message = $name."<br><br>".$email."<br><br>".$message;
+//     $message = wordwrap(strip_tags($_POST['message']), 75, "\n");  
+//     $headers = "MIME-Version: 1.0" . "\r\n";
+//     $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+//     $headers .= 'From: Contact Forms <contact@devreo.info>' . "\r\n";
+//     $to = "ryan@devreo.info";
+//     //$to = "ryanorourke@yahoo.com";
+//     mail($to,$subject,$message,$headers);
+//     //header("Location: index.php");
+//     //die();
+// }
 ?>
 
 <!DOCTYPE html>
@@ -34,12 +30,7 @@ ini_set('display_errors', 1);
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <link rel="stylesheet" href="css/animate.css">
-        <link rel="stylesheet" href="css/templatemo_misc.css">
-        <link rel="stylesheet" href="css/templatemo_style.css">
-        <link rel="stylesheet" href="css/owl-carousel.css">
         <link rel="stylesheet" href="css/main.css">
-        
-
     </head>
     <body>
         <section id="top-section">
@@ -47,12 +38,8 @@ ini_set('display_errors', 1);
                 <div class="col-md-6">
                     <h1>DEVREO</h1>
                     <h4>By Ryan O'Rourke</h4>
-                </div>
-                <div class="col-md-6">
-
-                </div>
+                </div>                
             </div>
-
             <div class="row dr-title">
                 <div class="col-md-12">
                     <h1>Web Development, Front to Back</h1>
