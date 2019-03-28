@@ -243,6 +243,7 @@ body {
     line-height: 18px;
     font-family: 'Cuprum', sans-serif;
     color: var(--light-blue);
+    text-align: center;
 }
 
 
@@ -261,6 +262,10 @@ body {
   height: 162px; */
   width: 100%;
   object-fit: contain;
+}
+
+.project-container {
+  padding: 0;
 }
 
 .contact-me {
@@ -403,7 +408,8 @@ footer h3 {
     .dr-title {padding: 25px 25px;}
     .dr-header {padding: 25px 25px 0px 25px; text-align: center;}
     .faded-hr {display: none;}
-    
+    footer h2 {text-align: center;}
+    footer h3 {text-align: center;}
     .project-row > .col-md-6 {width: 100% !important;}
   }
 
@@ -426,9 +432,15 @@ footer h3 {
    }
 
    @media all and (max-width: 768px) {
+    
     .faded-hr {display: none;}
     .about h1 {font-size: 6vw;}
     .about h2 {font-size: 5vw;}
     .dr-title h1 {margin: 0px; }
     .project img {width: 100% !important;}
+    .contact-me {padding: 50px 0px;}
+
+    .contact-links i {
+      margin: 25px;
+    }
   }
