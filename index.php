@@ -176,70 +176,79 @@ $sections = json_decode(json_encode($sections));
         </div>
     </section>
 
+    <?php
+        $projects = [
+        [
+            "title" => "This Website",
+            "description" => "This is my hand-made, personal website. I utilized
+            Bootstrap and Font Awesome.
+            Other than that, I created everything from scratch. I am not a web designer, but
+            I feel like I was able to
+            make a simplistic portfolio website.",
+            "image" => "img/website-mock.png",
+            "tags" => [
+                "HTML", "CSS", "PHP", "Bootstrap"
+            ],
+            "links" => [
+                [
+                    "class" => "fab fa-github",
+                    "url" => "https://github.com/NatrillyAspirated/Website"
+                ],
+                [
+                    "class" => "fas fa-link",
+                    "url" => ""
+                ]
+            ]
+        ]
+    ];
+
+    $projects = json_decode(json_encode($projects));
+    ?>
+
     <section id="portfolio" class="portfolio-section">
         <h1>What am I working on?</h1>
         <p class="portfolio-description">My large projects have all been for internal use. I am working on side projects
             in order to build up my portfolio. See my current projects below.</p>
         <div class="container">
             <div class="row project-row">
-
-                <div class="col-md-6 project-container">
-                    <div class="project">
-                        <div class="row project-content-row">
-                            <div class="col-md-6">
-                                <h2>This Website</h2>
-                                <div class="text-left">
-                                    <p class="project-description">This is my hand-made, personal website. I utilized
-                                        Bootstrap and Font Awesome.
-                                        Other than that, I created everything from scratch. I am not a web designer, but
-                                        I feel like I was able to
-                                        make a simplistic portfolio website.</p>
+                <?php
+                    foreach ($projects as $project) {
+                        echo '
+                        <div class="col-md-6 project-container">
+                            <div class="project">
+                                <div class="row project-content-row">
+                                    <div class="col-md-6">
+                                        <h2>'.$project->title.'</h2>
+                                        <div class="text-left">
+                                            <p class="project-description">'.$project->description.'</p>
+                                        </div>
+                                        <div class="col-md-12 project-tags">';
+                                            foreach ($project->tags as $tag) {
+                                            echo '<h4>'.$tag.'</h4>';
+                                            }
+                                            echo '
+                                        </div>
+                                        <div class="col-md-12 project-links text-left">';
+                                            foreach ($project->links as $link) {
+                                            echo '
+                                            <a href="'.$link->url.'" target="blank" style="text-decoration: none;">
+                                                <i class="'.$link->class.'"></i>
+                                            </a>';
+                                            }
+                                            echo'
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <img src="'.$project->image.'" />
+                                    </div>
+                                    
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <img src="img/website-mock.png" />
-                            </div>
-                            <div class="col-md-12 project-tags">
-                                <h4>HTML</h4>
-                                <h4>CSS</h4>
-                                <h4>PHP</h4>
-                                <h4>Bootstrap</h4>
-                            </div>
-                            <div class="col-md-12 project-links text-left">
-                                <a href="https://github.com/NatrillyAspirated/Website" target="blank"><i class="fab fa-github"></i></a>
-                                <a href="" target="blank"><i class="fas fa-link"></i></a>
-                            </div>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Project Template
-                <div class="col-md-6 project-container">
-                    <div class="project">
-                        <div class="row project-content-row">
-                            <div class="col-md-6">
-                                <h2>Project Name</h2>
-                                <div class="text-left">
-                                    <p class="project-description">This is a description about one of the projects that
-                                        I will have created. This is a simply a template to demostrate how it will look.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Aspect_ratio_-_16x9.svg"
-                                    style="background-color: red" />
-                            </div>
-                            <div class="col-md-12 project-tags">
-                                <h4>Project Tag</h4>
-                                <h4>Longer Project Tag</h4>
-                                <h4>Tag</h4>
-                            </div>
-                            <div class="col-md-12 project-links text-left">
-                                <a href="" target="blank"><i class="fab fa-github"></i></a>
-                                <a href="" target="blank"><i class="fas fa-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
+                        ';
+                    }
+                ?>
 
             </div>
         </div>
