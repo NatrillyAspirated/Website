@@ -72,8 +72,8 @@ $testimonials = [
 
 <head>
     <meta charset="utf-8">
-    <title>Acacia Tree Care</title>
-    <meta name="description" content="Acacia Tree Care">
+    <title>Acacia Tree & Landscape Care</title>
+    <meta name="description" content="Acacia Tree & Landscape Care">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="/img/favicon.ico">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
@@ -162,7 +162,7 @@ $testimonials = [
                 </div>
             </div>
             <div class="request">
-                <img class="full-img" src="img/Roland/agave.png" alt="">
+                <img class="full-img" src="img/Roland/agave." alt="">
                 <?php echo $request;?>
             </div>
         </div>
@@ -186,8 +186,19 @@ $testimonials = [
             </div>
         </div>
 
-        <div class="content" id="about-us">
-
+        <div class="content" id="portfolio">
+            <div class="text">
+                <h1>Portfolio</h1>
+                <?php
+                    foreach ($testimonials as $testimonial) {                        
+                        
+                    }
+                ?>
+            </div>
+            <div class="request">
+                <img class="full-img" src="img/Roland/agave.png" alt="">
+                <?php echo $request;?>
+            </div>
         </div>
     </div>
 
