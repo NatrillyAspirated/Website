@@ -1,0 +1,143 @@
+:root {
+    --dark-blue: #02386b;
+    --light-blue: #0084ff;
+    --blue: #2358a8;
+    --dark: rgb(58, 58, 58);
+    --main-width: 1080px;
+}
+
+.header {
+    width: 100%;
+    background-color: white;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    height: 60px;
+
+    overflow: hidden;
+}
+
+.content {
+    width: var(--main-width);
+    margin: auto;
+    height: 100%;
+}
+
+
+.header .content {
+    padding-bottom: 15px;
+}
+
+.header button {
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 0px 3px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.header button:hover {
+    background-color: var(--blue);
+    color: white;
+    transition-duration: 0.5s;
+}
+
+.main-container {
+    padding: 30px 0px;
+}
+
+.main-container .content {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.request {
+    text-align: left;
+}
+
+.request input[type=button] {
+    width: 100%;
+    background-color: var(--blue);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.request input[type=button]:hover {
+    background-color: rgb(36, 65, 145);
+    transition-duration: 1s;
+}
+
+.current {
+    background-color: var(--blue) !important;
+    color: white !important;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 100%;
+    text-align: center;
+}
+
+.logo img {
+    width: 50%;
+}
+
+.header-separator {
+    height: 5px;
+    width: 100%;
+    background-color: var(--blue);
+}
+
+.full-img {
+    width: 100%;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.text p {
+    padding-right: 200px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+body {
+    margin: 0;
+    font-family: arial;
+}
+
+footer {
+    background-color: var(--dark);
+    color: white;
+    padding: 10px 0px;
+}
+
+img {
+    image-orientation: from-image;
+}
+
+button {
+    outline: none;
+}
