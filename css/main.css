@@ -209,12 +209,26 @@ body {
     border-radius: 50px;
     padding: 5px 40px;
     color: white;
-    margin: 5px;
+    margin: auto;
+    margin-bottom: 10px;
+    max-width: 1200px;
+  }
+
+  .portfolio-header {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .project-info {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .project-description {
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
+    overflow: auto;
   }
 
   .portfolio-section .container {
@@ -389,7 +403,7 @@ footer h3 {
  @media all and (max-width: 480px) {
     .about {padding: 0px 25px 25px 25px !important;}
     .bio-section {padding: 0px 25px 25px 25px;}
-    .portfolio-section {padding: 25px 0px !important;}
+    .portfolio-section {padding: 25px !important;}
   }
 
   @media all and (max-width: 1280px) {
@@ -424,20 +438,31 @@ footer h3 {
         border-radius: 0px 0px 50px 50px;
     }
     .bio-section .container {
-        border-radius: 50px 50px 50px 50px;
-        margin-top: 20px;
-      }
-      .project img {width: 75%;}
-      .portfolio-section {padding: 25px 25px 25px 25px;}
-   }
+      border-radius: 50px 50px 50px 50px;
+      margin-top: 20px;
+    }
+    /* .project img {width: 75%;} */
+    .portfolio-section {padding: 25px 25px 25px 25px;}
+    .project-info, .project-tags {
+      justify-content: center;
+    }
 
-   @media all and (max-width: 768px) {
+    .project-links, .project-description, .portfolio-header {
+      text-align: center;
+    }
+
+    .project-tags h4:last-child {
+      margin-right: 0;
+    }
+  }
+
+  @media all and (max-width: 768px) {
     
     .faded-hr {display: none;}
     .about h1 {font-size: 6vw;}
     .about h2 {font-size: 5vw;}
     .dr-title h1 {margin: 0px; }
-    .project img {width: 100% !important;}
+    /* .project img {width: 100% !important;} */
     .contact-me {padding: 50px 0px;}
 
     .contact-links i {

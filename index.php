@@ -177,7 +177,7 @@ $sections = json_decode(json_encode($sections));
     </section>
 
     <?php
-        $projects = [
+    $projects = [
         [
             "title" => "This Website",
             "description" => "This is my hand-made, personal website. I utilized
@@ -199,6 +199,20 @@ $sections = json_decode(json_encode($sections));
                     "url" => ""
                 ]
             ]
+        ],
+        [
+            "title" => "Acacia",
+            "description" => "Family owned tree and landscape care business. I created their site in Wordpress for a quick and easy way for them to manage their content.",
+            "image" => "img/acacia/website-mockup.png",
+            "tags" => [
+                "HTML", "CSS", "PHP", "Wordpress"
+            ],
+            "links" => [
+                [
+                    "class" => "fas fa-link",
+                    "url" => "http://acaciatreecare.com"
+                ]
+            ]
         ]
     ];
 
@@ -206,48 +220,90 @@ $sections = json_decode(json_encode($sections));
     ?>
 
     <section id="portfolio" class="portfolio-section">
-        <h1>What am I working on?</h1>
-        <p class="portfolio-description">My large projects have all been for internal use. I am working on side projects
-            in order to build up my portfolio. See my current projects below.</p>
+        <div class="portfolio-header">
+            <h1>What am I working on?</h1>
+            <p class="portfolio-description">My large projects have all been for internal use at my place of work. I am working on side projects
+                in order to build up my portfolio. See my current projects below.</p>
+        </div>
         <div class="container">
             <div class="row project-row">
                 <?php
-                    foreach ($projects as $project) {
+                // foreach ($projects as $project) {
+                //     echo '
+                //         <div class="col-md-6 project-container">
+                //             <div class="project">
+                //                 <div class="row project-content-row">
+                //                     <div class="col-md-6">
+                //                         <h2>' . $project->title . '</h2>
+                //                         <div class="text-left">
+                //                             <p class="project-description">' . $project->description . '</p>
+                //                         </div>
+                //                         <div class="col-md-12 project-tags">';
+                //     foreach ($project->tags as $tag) {
+                //         echo '<h4>' . $tag . '</h4>';
+                //     }
+                //     echo '
+                //                         </div>
+                //                         <div class="col-md-12 project-links text-left">';
+                //     foreach ($project->links as $link) {
+                //         echo '
+                //                             <a href="' . $link->url . '" target="blank" style="text-decoration: none;">
+                //                                 <i class="' . $link->class . '"></i>
+                //                             </a>';
+                //     }
+                //     echo '
+                //                         </div>
+                //                     </div>
+
+                //                     <div class="col-md-6">
+                //                         <img src="' . $project->image . '" />
+                //                     </div>
+
+                //                 </div>
+                //             </div>
+                //         </div>
+                //         ';
+                // }
+                ?>
+
+                <?php
+                foreach ($projects as $project) {
+                    echo '
+                            <div class="project-container">
+                                <div class="project row">
+                                        <div class="col-md-8 project-info">
+                                            <h2>' . $project->title . '</h2>
+                                            <div class="text-left">
+                                                <p class="project-description">' . $project->description . '</p>
+                                            </div>
+                                            <div>
+                                                <div class="project-tags">';
+                    foreach ($project->tags as $tag) {
+                        echo '<h4>' . $tag . '</h4>';
+                    }
+                    echo '
+                                                </div>
+                                                <div class="project-links text-left">';
+                    foreach ($project->links as $link) {
                         echo '
-                        <div class="col-md-6 project-container">
-                            <div class="project">
-                                <div class="row project-content-row">
-                                    <div class="col-md-6">
-                                        <h2>'.$project->title.'</h2>
-                                        <div class="text-left">
-                                            <p class="project-description">'.$project->description.'</p>
+                                                    <a href="' . $link->url . '" target="blank" style="text-decoration: none;">
+                                                        <i class="' . $link->class . '"></i>
+                                                    </a>';
+                    }
+                    echo '
+                                                </div>
+                                            </div>
+                                            
                                         </div>
-                                        <div class="col-md-12 project-tags">';
-                                            foreach ($project->tags as $tag) {
-                                            echo '<h4>'.$tag.'</h4>';
-                                            }
-                                            echo '
-                                        </div>
-                                        <div class="col-md-12 project-links text-left">';
-                                            foreach ($project->links as $link) {
-                                            echo '
-                                            <a href="'.$link->url.'" target="blank" style="text-decoration: none;">
-                                                <i class="'.$link->class.'"></i>
-                                            </a>';
-                                            }
-                                            echo'
-                                        </div>
-                                    </div>
                                     
-                                    <div class="col-md-6">
-                                        <img src="'.$project->image.'" />
-                                    </div>
+                                        <div class="col-md-4">
+                                            <img src="' . $project->image . '" />
+                                        </div>
                                     
                                 </div>
                             </div>
-                        </div>
-                        ';
-                    }
+                            ';
+                }
                 ?>
 
             </div>
