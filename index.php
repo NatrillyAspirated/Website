@@ -1,22 +1,4 @@
 <?php
-// /// For contact form
-// if (isset($_POST['name'])) {
-//     error_reporting(E_ALL);
-//     ini_set('display_errors', 1);
-//     $name = strip_tags($_POST['name']);
-//     $email = strip_tags($_POST['email']);
-//     $subject = strip_tags($_POST['subject']);
-//     $message = $name."<br><br>".$email."<br><br>".$message;
-//     $message = wordwrap(strip_tags($_POST['message']), 75, "\n");  
-//     $headers = "MIME-Version: 1.0" . "\r\n";
-//     $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-//     $headers .= 'From: Contact Forms <contact@devreo.info>' . "\r\n";
-//     $to = "ryan@devreo.info";
-//     //$to = "ryanorourke@yahoo.com";
-//     mail($to,$subject,$message,$headers);
-//     //header("Location: index.php");
-//     //die();
-// }
 
 $sections = [
     [
