@@ -228,45 +228,6 @@ $sections = json_decode(json_encode($sections));
         <div class="container">
             <div class="row project-row">
                 <?php
-                // foreach ($projects as $project) {
-                //     echo '
-                //         <div class="col-md-6 project-container">
-                //             <div class="project">
-                //                 <div class="row project-content-row">
-                //                     <div class="col-md-6">
-                //                         <h2>' . $project->title . '</h2>
-                //                         <div class="text-left">
-                //                             <p class="project-description">' . $project->description . '</p>
-                //                         </div>
-                //                         <div class="col-md-12 project-tags">';
-                //     foreach ($project->tags as $tag) {
-                //         echo '<h4>' . $tag . '</h4>';
-                //     }
-                //     echo '
-                //                         </div>
-                //                         <div class="col-md-12 project-links text-left">';
-                //     foreach ($project->links as $link) {
-                //         echo '
-                //                             <a href="' . $link->url . '" target="blank" style="text-decoration: none;">
-                //                                 <i class="' . $link->class . '"></i>
-                //                             </a>';
-                //     }
-                //     echo '
-                //                         </div>
-                //                     </div>
-
-                //                     <div class="col-md-6">
-                //                         <img src="' . $project->image . '" />
-                //                     </div>
-
-                //                 </div>
-                //             </div>
-                //         </div>
-                //         ';
-                // }
-                ?>
-
-                <?php
                 foreach ($projects as $project) {
                     echo '
                             <div class="project-container">
